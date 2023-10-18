@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/QDTGdhF/The-Evolution-of-the-Classic-Disney-Logo.jpg",
+      "brandName": "Disney"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/mGvLnHR/Netflix-frenar-a-los-usuarios-que-comparten-la-contrase-a.jpg",
+      "brandName": "Netflix"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/Yy503P6/warner-brothers-logo-is-simple-and-stands-out.jpg",
+      "brandName": "Warner Bros."
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/Nm77Fg6/Sony-Pictures.jpg",
+      "brandName": "Sony Pictures"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/9mXZLhj/Spotify.jpg",
+      "brandName": "Spotify"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/DQZ28b1/Warner-Home-Video.jpg",
+      "brandName": "Time Warner"
+    }
+  ]
