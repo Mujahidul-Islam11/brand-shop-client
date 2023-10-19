@@ -1,10 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./AuthProvider";
 import swal from "sweetalert";
 
 const Register = () => {
   const { createUser, GoogleSignIn } = useContext(AuthContext);
+  const mainRoute = useNavigate()
   
 
   const handleForm = (e) => {
@@ -14,11 +15,20 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     const photo = form.photo.value;
-    console.log(name, email, password, photo)
+    console.log(name, email, password, photo);
+    if (
+      !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/.test(
+          password
+      )
+  ) {
+      swal("Error!", "Minimum six characters, at least one capital letter, one number and one special character", "error")
+      return;
+  }
     createUser(email, password)
     .then(result =>{
       console.log(result.user)
       swal("Good job!", "Successfully created user", "success");
+      mainRoute('/')
     })
     .catch(error=>{
       console.error(error)
@@ -30,6 +40,7 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 swal("Good job!", "Successfully created user", "success");
+                mainRoute('/')
             })
             .catch(error => {
                 console.error(error)

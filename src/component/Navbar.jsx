@@ -1,6 +1,22 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "./AuthProvider";
+import swal from "sweetalert";
+
 
 const Navbar = () => {
+  const {user,LogOut} = useContext(AuthContext);
+
+  const handleLogOut = () =>{
+    LogOut()
+    .then(result =>{
+      console.log(result.user)
+      swal("Good job!", "Successfully logged out user", "success");
+    })
+    .catch(error=>{
+      console.error(error)
+    })
+  }
     const links = (
         <>
           <li className="text-xl font-bold">
@@ -13,6 +29,7 @@ const Navbar = () => {
               <a href="">Home</a>
             </NavLink>
           </li>
+
           <li className="text-xl font-bold">
             <NavLink
               to="/login"
@@ -23,6 +40,7 @@ const Navbar = () => {
               <a href="">Login</a>
             </NavLink>
           </li>
+
           <li className="text-xl font-bold">
             <NavLink
               to="/register"
@@ -33,7 +51,9 @@ const Navbar = () => {
               <a href="">Register</a>
             </NavLink>
           </li>
-          <li className="text-xl font-bold">
+
+          {user &&
+            <li className="text-xl font-bold">
             <NavLink
               to="/addProduct"
               className={({ isActive, isPending }) =>
@@ -43,7 +63,10 @@ const Navbar = () => {
               <a href="">Add Product</a>
             </NavLink>
           </li>
-          <li className="text-xl font-bold">
+          }
+
+          {user &&
+            <li className="text-xl font-bold">
             <NavLink
               to="/myCart"
               className={({ isActive, isPending }) =>
@@ -53,6 +76,7 @@ const Navbar = () => {
               <a href="">My Cart</a>
             </NavLink>
           </li>
+          }
         </>
       )
     return (
@@ -78,9 +102,14 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <NavLink to={'/login'}>
-    <a className="btn">LogIn</a>
-    </NavLink>
+    {user? <button onClick={handleLogOut} className="btn">
+      LogOut
+    </button>
+    :
+      <NavLink to={'/login'}>
+      <a className="btn">LogIn</a>
+      </NavLink>
+    }
   </div>
 </div>
     );

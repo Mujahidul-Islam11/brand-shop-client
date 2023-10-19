@@ -13,6 +13,7 @@ import Register from './component/Register';
 import AddProduct from './component/AddProduct';
 import MyCart from './component/MyCart';
 import Error from './Error';
+import PrivateRoute from './component/PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -36,11 +37,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/addProduct',
-        element: <AddProduct></AddProduct>
+        element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
       },
       {
         path: '/myCart',
-        element: <MyCart></MyCart>
+        element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
       }
     ]
   },

@@ -1,10 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
+import swal from "sweetalert";
+
 
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn,GoogleSignIn } = useContext(AuthContext);
+  const mainRoute = useNavigate()
 
   const handleForm = (e) => {
     e.preventDefault();
@@ -12,13 +15,27 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     signIn(email, password)
-    .then(result =>{
-      console.log(result.user)
-    })
-    .catch(error=>{
-      console.error(error)
-    })
+      .then((result) => {
+        console.log(result.user);
+        swal("Good job!", "Successfully logged in", "success");
+        mainRoute('/')
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
+  const handleGoogleSignIn = () =>{
+    GoogleSignIn()
+            .then(result => {
+                console.log(result.user);
+                swal("Good job!", "Successfully logged in", "success");
+                mainRoute('/')
+            })
+            .catch(error => {
+                console.error(error)
+            })
+  }
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col ">
@@ -26,7 +43,7 @@ const Login = () => {
           <h1 className="text-5xl font-bold">Login now!</h1>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form  onSubmit={handleForm} className="card-body">
+          <form onSubmit={handleForm} className="card-body">
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -52,7 +69,10 @@ const Login = () => {
               />
               <label className="label">
                 <h3>
-                  Don't have an account? <NavLink className='font-bold' to={"/register"}>Register</NavLink>
+                  Don't have an account?{" "}
+                  <NavLink className="font-bold" to={"/register"}>
+                    Register
+                  </NavLink>
                 </h3>
               </label>
             </div>
@@ -60,6 +80,13 @@ const Login = () => {
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
+          <h3 className="text-center">Or</h3>
+          <button
+            onClick={handleGoogleSignIn}
+            className="btn btn-primary mb-2 mx-2"
+          >
+            Register With Google
+          </button>
         </div>
       </div>
     </div>
