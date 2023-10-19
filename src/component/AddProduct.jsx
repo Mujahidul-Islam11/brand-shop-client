@@ -15,11 +15,11 @@ const AddProduct = () => {
     }
     return (
         <div className="container mx-auto ">
-            <div className="bg-[#194656] p-24 max-h-screen">
+            <div className="bg-[#194656] p-4 md:p-24 min-h-screen">
             <h2 className="text-3xl text-yellow-300 mt-[-50px] font-extrabold">Add a Product</h2>
             <form onSubmit={handleForm}>
                 <div className="md:flex mb-4">
-                    <div className="form-control md:w-1/2">
+                    <div className="form-control w-full md:w-1/2">
                         <label className="label">
                             <span className="label-text text-yellow-300">Name</span>
                         </label>
@@ -27,7 +27,7 @@ const AddProduct = () => {
                             <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 ml-4">
+                    <div className="form-control w-full md:w-1/2 md:ml-4">
                         <label className="label">
                             <span className="label-text text-yellow-300">Brand Name</span>
                         </label>
@@ -37,7 +37,7 @@ const AddProduct = () => {
                     </div>
                 </div>
                 <div className="md:flex mb-4">
-                    <div className="form-control md:w-1/2">
+                    <div className="form-control w-full md:w-1/2">
                         <label className="label">
                             <span className="label-text text-yellow-300">Type</span>
                         </label>
@@ -45,7 +45,7 @@ const AddProduct = () => {
                             <input type="text" name="type" placeholder="Product Type" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 ml-4">
+                    <div className="form-control w-full md:w-1/2 md:ml-4">
                         <label className="label">
                             <span className="label-text text-yellow-300">Short Description</span>
                         </label>
@@ -55,7 +55,7 @@ const AddProduct = () => {
                     </div>
                 </div>
                 <div className="md:flex mb-4">
-                    <div className="form-control md:w-1/2">
+                    <div className="form-control w-full md:w-1/2">
                         <label className="label">
                             <span className="label-text text-yellow-300">Price</span>
                         </label>
@@ -63,7 +63,7 @@ const AddProduct = () => {
                             <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    <div className="form-control md:w-1/2 ml-4">
+                    <div className="form-control md:w-1/2 md:ml-4">
                         <label className="label">
                             <span className="label-text text-yellow-300">Rating</span>
                         </label>

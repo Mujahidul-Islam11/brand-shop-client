@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "image": "https://i.ibb.co/L18Gmwf/Inception-2010.jpg",
+    "description": "A mind-bending science fiction thriller directed by Christopher Nolan.",
+    "rating": 8.8
+  },
+  {
+    "id": 2,
+    "title": "Stranger Things",
+    "image": "https://i.ibb.co/tQ2X270/Stranger-Things-Netflix-s-Spielberg-esque-series-gets-new-trailer-poster-exclusive.jpg",
+    "description": "A popular Netflix series set in the 1980s with supernatural elements.",
+    "rating": 8.7
+  },
+  {
+    "id": 3,
+    "title": "The Crown",
+    "image": "https://i.ibb.co/jH4jBWm/Top-Netflix-Series-to-watch-while-crafting-Best-Movies-and-Series-to-follow-while-you-embroider-sugg.jpg",
+    "description": "A historical drama series about the reign of Queen Elizabeth II.",
+    "rating": 8.7
+  },
+  {
+    "id": 4,
+    "title": "Avengers Endgame",
+    "image": "https://i.ibb.co/JQxnytz/Avengers-Endgame-By-TBK23-by-k-3000-on-Deviant-Art.jpg",
+    "description": "A superhero film in the Marvel Cinematic Universe directed by Anthony and Joe Russo.",
+    "rating": 8.4
+  },
+  {
+    "id": 5,
+    "title": "Game of Thrones",
+    "image": "https://i.ibb.co/TLrvK68/Cinco-tramas-que-no-incluyeron-en-Game-of-Thrones-y-que-son-cruciales-en-los-libros.jpg",
+    "description": "A fantasy drama series based on George R. R. Martin's 'A Song of Ice and Fire' novels.",
+    "rating": 9.3
+  },
+  {
+    "id": 6,
+    "title": "The Matrix",
+    "image": "https://i.ibb.co/XkbPDcL/The-Matrix-1994-x-2880-ripped-from-Bluray-release-text-removed-AI-upscaled.jpg",
+    "description": "A science fiction action film directed by the Wachowskis.",
+    "rating": 8.7
+  },
+  {
+    "id": 7,
+    "title": "Breaking Bad",
+    "image": "https://i.ibb.co/CtS9wVL/Illustration-AMC-s-Breaking-Bad.jpg",
+    "description": "A crime drama series focusing on the transformation of a high school chemistry teacher into a drug kingpin.",
+    "rating": 9.5
+  },
+  {
+    "id": 8,
+    "title": "The Mandalorian",
+    "image": "https://i.ibb.co/4pHpcP6/3e6f8f50-fe56-4848-a619-278e009c45c3.jpg",
+    "description": "A space western series set in the Star Wars universe.",
+    "rating": 8.8
+  }
+]

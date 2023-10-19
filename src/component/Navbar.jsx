@@ -9,13 +9,9 @@ const Navbar = () => {
 
   const handleLogOut = () =>{
     LogOut()
-    .then(result =>{
-      console.log(result.user)
-      swal("Good job!", "Successfully logged out user", "success");
-    })
-    .then(error=>{
-      console.error(error)
-    })
+    .then()
+    .catch()
+    swal("Good job!", "Successfully logged out user", "success");
   }
     const links = (
         <>
@@ -90,6 +86,30 @@ const Navbar = () => {
 {
     links
 }
+{user? <div className="flex lg:hidden flex-wrap items-center gap-4">
+              <div className=" flex-wrap items-center gap-2">
+                <img
+                  className="w-[50px] rounded-full"
+                  src={user.photoURL}
+                  alt="User Profile"
+                />
+                <p className="font-semibold">
+                  {user.displayName}
+                </p>
+              </div>
+              <button
+                onClick={handleLogOut}
+                type="button"
+                className="btn md:inline-block focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 "
+              >
+                LogOut
+              </button>
+            </div>
+    :
+      <NavLink to={'/login'}>
+      <a className="btn">LogIn</a>
+      </NavLink>
+    }
       </ul>
     </div>
     <a className="btn btn-ghost normal-case text-xl">EntoMedu</a>
@@ -102,7 +122,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    {user? <div className="flex flex-wrap items-center gap-4">
+    {user? <div className="lg:flex hidden flex-wrap items-center gap-4">
               <div className="flex flex-wrap items-center gap-2">
                 <img
                   className="w-[50px] rounded-full"
