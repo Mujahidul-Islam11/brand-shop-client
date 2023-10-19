@@ -4,7 +4,7 @@ import { AuthContext } from "./AuthProvider";
 import swal from "sweetalert";
 
 const Register = () => {
-  const { createUser, GoogleSignIn } = useContext(AuthContext);
+  const { createUser, GoogleSignIn, LogOut,upProfile } = useContext(AuthContext);
   const mainRoute = useNavigate()
   
 
@@ -28,12 +28,28 @@ const Register = () => {
     .then(result =>{
       console.log(result.user)
       swal("Good job!", "Successfully created user", "success");
-      mainRoute('/')
+      mainRoute('/login')
+      upProfile(name, photo)
+                    .then(result => {
+                        console.log(result.user);
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    })
+      LogOut()
+          .then(result => {
+              console.log(result.user);
+          })
+          .catch(error => {
+              console.error(error)
+          })
     })
     .catch(error=>{
       console.error(error)
     })
   };
+
+
 
   const handleGoogleSignIn = () =>{
     GoogleSignIn()

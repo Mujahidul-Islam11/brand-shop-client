@@ -13,7 +13,7 @@ const Navbar = () => {
       console.log(result.user)
       swal("Good job!", "Successfully logged out user", "success");
     })
-    .catch(error=>{
+    .then(error=>{
       console.error(error)
     })
   }
@@ -27,28 +27,6 @@ const Navbar = () => {
               }
             >
               <a href="">Home</a>
-            </NavLink>
-          </li>
-
-          <li className="text-xl font-bold">
-            <NavLink
-              to="/login"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
-              }
-            >
-              <a href="">Login</a>
-            </NavLink>
-          </li>
-
-          <li className="text-xl font-bold">
-            <NavLink
-              to="/register"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
-              }
-            >
-              <a href="">Register</a>
             </NavLink>
           </li>
 
@@ -77,6 +55,28 @@ const Navbar = () => {
             </NavLink>
           </li>
           }
+
+<li className="text-xl font-bold">
+            <NavLink
+              to="/login"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
+              }
+            >
+              <a href="">Login</a>
+            </NavLink>
+          </li>
+
+          <li className="text-xl font-bold">
+            <NavLink
+              to="/register"
+              className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
+              }
+            >
+              <a href="">Register</a>
+            </NavLink>
+          </li>
         </>
       )
     return (
@@ -102,9 +102,25 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    {user? <button onClick={handleLogOut} className="btn">
-      LogOut
-    </button>
+    {user? <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-2">
+                <img
+                  className="w-[50px] rounded-full"
+                  src={user.photoURL}
+                  alt="User Profile"
+                />
+                <p className="font-semibold">
+                  {user.displayName}
+                </p>
+              </div>
+              <button
+                onClick={handleLogOut}
+                type="button"
+                className="btn md:inline-block focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 "
+              >
+                LogOut
+              </button>
+            </div>
     :
       <NavLink to={'/login'}>
       <a className="btn">LogIn</a>
