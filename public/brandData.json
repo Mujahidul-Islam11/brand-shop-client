@@ -1,142 +1,234 @@
 [
+  {
+    "Disney": [
       {
+        "image": "URL to Disney+ logo",
+        "name": "Disney+ Subscription",
         "brandName": "Disney",
-        "brandImageSlider": [
-          {
-            "brandImageSliderId": 1,
-            "brandSliderImg": "https://example.com/disney-slider1.jpg",
-            "title": "The Magic of Disney",
-            "shortDescription": "Discover the enchanting world of Disney with timeless classics and new adventures."
-          },
-          {
-            "brandImageSliderId": 2,
-            "brandSliderImg": "https://example.com/disney-slider2.jpg",
-            "title": "Magic Comes to Life",
-            "shortDescription": "Experience the magic of Disney like never before. From beloved characters to spectacular theme parks."
-          },
-          {
-            "brandImageSliderId": 3,
-            "brandSliderImg": "https://example.com/disney-slider3.jpg",
-            "title": "Creating Dreams Since 1923",
-            "shortDescription": "Disney has been a source of inspiration and joy for generations. Join us in celebrating the magic that started in 1923."
-          }
-        ]
+        "type": "Streaming Service",
+        "price": "$7.99/month",
+        "rating": 4.8,
+        "shortDescription": "Get unlimited access to movies, series, and exclusive content on Disney+."
       },
       {
-        "brandName": "Netflix",
-        "brandImageSlider": [
-          {
-            "brandImageSliderId": 1,
-            "brandSliderImg": "https://example.com/netflix-slider1.jpg",
-            "title": "Endless Entertainment",
-            "shortDescription": "Explore a vast library of movies and TV shows on Netflix. From gripping dramas to hilarious comedies."
-          },
-          {
-            "brandImageSliderId": 2,
-            "brandSliderImg": "https://example.com/netflix-slider2.jpg",
-            "title": "Your Personal Cinema",
-            "shortDescription": "Transform your screen into a personal cinema with Netflix. Stream your favorite shows and movies on any device."
-          },
-          {
-            "brandImageSliderId": 3,
-            "brandSliderImg": "https://example.com/netflix-slider3.jpg",
-            "title": "Binge-Worthy Content",
-            "shortDescription": "Discover binge-worthy content on Netflix. Uninterrupted entertainment awaits, no matter your taste."
-          }
-        ]
+        "image": "URL to Disney Princess Backpack image",
+        "name": "Disney Princess Backpack",
+        "brandName": "Disney",
+        "type": "Merchandise",
+        "price": "$29.99",
+        "rating": 4.5,
+        "shortDescription": "A beautiful backpack featuring your favorite Disney princesses."
       },
       {
-        "brandName": "Warner Bros.",
-        "brandImageSlider": [
-          {
-            "brandImageSliderId": 1,
-            "brandSliderImg": "https://example.com/warner-bros-slider1.jpg",
-            "title": "Entertainment Beyond Boundaries",
-            "shortDescription": "Warner Bros. brings you blockbuster movies, iconic characters, and legendary stories. Immerse yourself in cinematic excellence."
-          },
-          {
-            "brandImageSliderId": 2,
-            "brandSliderImg": "https://example.com/warner-bros-slider2.jpg",
-            "title": "100 Years of Magic",
-            "shortDescription": "Join us in celebrating 100 years of magical storytelling. Warner Bros. continues to captivate audiences worldwide."
-          },
-          {
-            "brandImageSliderId": 3,
-            "brandSliderImg": "https://example.com/warner-bros-slider3.jpg",
-            "title": "Heroes and Villains Unite",
-            "shortDescription": "Explore the world of heroes and villains with Warner Bros. Discover epic battles and timeless characters."
-          }
-        ]
+        "image": "URL to The Lion King DVD image",
+        "name": "The Lion King (DVD)",
+        "brandName": "Disney",
+        "type": "DVD",
+        "price": "$19.99",
+        "rating": 4.9,
+        "shortDescription": "Bring the magic of Disney's The Lion King to your home with this DVD."
       },
       {
-        "brandName": "Sony Pictures",
-        "brandImageSlider": [
-          {
-            "brandImageSliderId": 1,
-            "brandSliderImg": "https://example.com/sony-pictures-slider1.jpg",
-            "title": "Unforgettable Cinematic Experiences",
-            "shortDescription": "Sony Pictures delivers unforgettable films and cinematic experiences. Dive into a world of drama, action, and imagination."
-          },
-          {
-            "brandImageSliderId": 2,
-            "brandSliderImg": "https://example.com/sony-pictures-slider2.jpg",
-            "title": "Where Stories Come to Life",
-            "shortDescription": "Experience storytelling at its finest with Sony Pictures. From gripping dramas to epic adventures, we create memories on the big screen."
-          },
-          {
-            "brandImageSliderId": 3,
-            "brandSliderImg": "https://example.com/sony-pictures-slider3.jpg",
-            "title": "Cinematic Excellence",
-            "shortDescription": "Sony Pictures is a symbol of cinematic excellence. Join us in celebrating the art of filmmaking."
-          }
-        ]
-      },
-      {
-        "brandName": "Spotify",
-        "brandImageSlider": [
-          {
-            "brandImageSliderId": 1,
-            "brandSliderImg": "https://example.com/spotify-slider1.jpg",
-            "title": "Your Soundtrack to Life",
-            "shortDescription": "Spotify provides music for every moment. Discover new artists, create playlists, and enjoy your favorite tunes anytime, anywhere."
-          },
-          {
-            "brandImageSliderId": 2,
-            "brandSliderImg": "https://example.com/spotify-slider2.jpg",
-            "title": "Endless Music Journey",
-            "shortDescription": "Embark on an endless music journey with Spotify. Find your rhythm, discover new genres, and make your own soundtracks."
-          },
-          {
-            "brandImageSliderId": 3,
-            "brandSliderImg": "https://example.com/spotify-slider3.jpg",
-            "title": "Music Unleashed",
-            "shortDescription": "With Spotify, music is unleashed in all its glory. Experience the power of sound and the joy of discovery."
-          }
-        ]
-      },
-      {
-        "brandName": "Time Warner",
-        "brandImageSlider": [
-          {
-            "brandImageSliderId": 1,
-            "brandSliderImg": "https://example.com/time-warner-slider1.jpg",
-            "title": "Connecting the World",
-            "shortDescription": "Time Warner is a global leader in media and entertainment. Our diverse portfolio reaches audiences around the world."
-          },
-          {
-            "brandImageSliderId": 2,
-            "brandSliderImg": "https://example.com/time-warner-slider2.jpg",
-            "title": "Shaping the Future of Media",
-            "shortDescription": "Join us in shaping the future of media and entertainment. At Time Warner, we innovate, inspire, and connect the world."
-          },
-          {
-            "brandImageSliderId": 3,
-            "brandSliderImg": "https://example.com/time-warner-slider3.jpg",
-            "title": "Embrace Creativity",
-            "shortDescription": "Embrace the power of creativity with Time Warner. Explore a world of storytelling, news, and innovation."
-          }
-        ]
+        "image": "URL to Disney+ T-shirt image",
+        "name": "Disney+ T-shirt",
+        "brandName": "Disney",
+        "type": "Apparel",
+        "price": "$14.99",
+        "rating": 4.7,
+        "shortDescription": "Show your love for Disney+ with this stylish T-shirt."
       }
+    ],
+    "Netflix": [
+      {
+        "image": "URL to Netflix logo",
+        "name": "Netflix Premium Subscription",
+        "brandName": "Netflix",
+        "type": "Streaming Service",
+        "price": "$13.99/month",
+        "rating": 4.6,
+        "shortDescription": "Enjoy ad-free streaming and access to a vast library of content with Netflix Premium."
+      },
+      {
+        "image": "URL to Netflix Original Series Poster",
+        "name": "Netflix Original Series Poster",
+        "brandName": "Netflix",
+        "type": "Poster",
+        "price": "$12.99",
+        "rating": 4.8,
+        "shortDescription": "Decorate your space with this poster featuring artwork from a popular Netflix series."
+      },
+      {
+        "image": "URL to Netflix Chill & Relax Mug image",
+        "name": "Netflix Chill & Relax Mug",
+        "brandName": "Netflix",
+        "type": "Merchandise",
+        "price": "$9.99",
+        "rating": 4.5,
+        "shortDescription": "Enjoy your favorite shows with a Netflix-themed mug."
+      },
+      {
+        "image": "URL to Netflix Hoodie image",
+        "name": "Netflix Hoodie",
+        "brandName": "Netflix",
+        "type": "Apparel",
+        "price": "$24.99",
+        "rating": 4.4,
+        "shortDescription": "Stay cozy and stylish with this Netflix-branded hoodie."
+      }
+    ],
+    "Spotify": [
+      {
+        "image": "URL to Spotify logo",
+        "name": "Spotify Premium Subscription",
+        "brandName": "Spotify",
+        "type": "Music Subscription",
+        "price": "$9.99/month",
+        "rating": 4.7,
+        "shortDescription": "Enjoy uninterrupted music streaming with Spotify Premium."
+      },
+      {
+        "image": "URL to Spotify Wireless Headphones image",
+        "name": "Spotify Wireless Headphones",
+        "brandName": "Spotify",
+        "type": "Headphones",
+        "price": "$89.99",
+        "rating": 4.6,
+        "shortDescription": "Listen to your favorite tunes with these high-quality wireless headphones."
+      },
+      {
+        "image": "URL to Spotify T-shirt image",
+        "name": "Spotify T-shirt",
+        "brandName": "Spotify",
+        "type": "Apparel",
+        "price": "$14.99",
+        "rating": 4.5,
+        "shortDescription": "Express your love for music with this cool Spotify T-shirt."
+      },
+      {
+        "image": "URL to Spotify Gift Card image",
+        "name": "Spotify Gift Card",
+        "brandName": "Spotify",
+        "type": "Gift Card",
+        "price": "$25.00",
+        "rating": 4.9,
+        "shortDescription": "Give the gift of music with a Spotify Gift Card."
+      }
+    ],
+    "Warner Bros.": [
+      {
+        "image": "URL to Warner Bros. logo",
+        "name": "Harry Potter Blu-ray Collection",
+        "brandName": "Warner Bros.",
+        "type": "Blu-ray",
+        "price": "$49.99",
+        "rating": 4.8,
+        "shortDescription": "Relive the magic of Harry Potter with this complete Blu-ray collection."
+      },
+      {
+        "image": "URL to DC Comics Poster image",
+        "name": "DC Comics Poster",
+        "brandName": "Warner Bros.",
+        "type": "Poster",
+        "price": "$10.99",
+        "rating": 4.6,
+        "shortDescription": "Deck your walls with iconic DC Comics artwork."
+      },
+      {
+        "image": "URL to Warner Bros. Studio Tour Tickets image",
+        "name": "Warner Bros. Studio Tour Tickets",
+        "brandName": "Warner Bros.",
+        "type": "Experience",
+        "price": "$29.99",
+        "rating": 4.5,
+        "shortDescription": "Explore the world of filmmaking with Warner Bros. Studio Tour."
+      },
+      {
+        "image": "URL to Looney Tunes Merchandise image",
+        "name": "Looney Tunes Merchandise",
+        "brandName": "Warner Bros.",
+        "type": "Merchandise",
+        "price": "$14.99",
+        "rating": 4.7,
+        "shortDescription": "Get your favorite Looney Tunes characters on various merchandise."
+      }
+    ],
+    "Sony Pictures": [
+      {
+        "image": "URL to Sony Pictures logo",
+        "name": "Spider-Man: No Way Home (Blu-ray)",
+        "brandName": "Sony Pictures",
+        "type": "Blu-ray",
+        "price": "$19.99",
+        "rating": 4.9,
+        "shortDescription": "Own the latest Spider-Man adventure with this Blu-ray release."
+      },
+      {
+        "image": "URL to Sony Pictures Movie Poster image",
+        "name": "Sony Pictures Movie Poster",
+        "brandName": "Sony Pictures",
+        "type": "Poster",
+        "price": "$12.99",
+        "rating": 4.8,
+        "shortDescription": "Decorate your space with iconic movie posters from Sony Pictures releases."
+      },
+      {
+        "image": "URL to Sony Pictures Merchandise image",
+        "name": "Sony Pictures Merchandise",
+        "brandName": "Sony Pictures",
+        "type": "Merchandise",
+        "price": "$9.99",
+        "rating": 4.6,
+        "shortDescription": "Get merchandise from your favorite Sony Pictures movies and TV shows."
+      },
+      {
+        "image": "URL to Jumanji Board Game image",
+        "name": "Jumanji Board Game",
+        "brandName": "Sony Pictures",
+        "type": "Board Game",
+        "price": "$29.99",
+        "rating": 4.7,
+        "shortDescription": "Experience the adventure of Jumanji with this board game."
+      }
+    ],
+    "Time Warner": [
+      {
+        "image": "URL to Time Warner logo",
+        "name": "HBO Max Subscription",
+        "brandName": "Time Warner",
+        "type": "Streaming Service",
+        "price": "$14.99/month",
+        "rating": 4.6,
+        "shortDescription": "Access HBO Max for a premium streaming experience with exclusive content."
+      },
+      {
+        "image": "URL to Time Warner Cable TV image",
+        "name": "Time Warner Cable TV",
+        "brandName": "Time Warner",
+        "type": "Cable TV Plan",
+        "price": "$59.99/month",
+        "rating": 4.5,
+        "shortDescription": "Get a variety of TV channels with Time Warner Cable TV subscription."
+      },
+      {
+        "image": "URL to Time Warner Internet Plan image",
+        "name": "Time Warner Internet Plan",
+        "brandName": "Time Warner",
+        "type": "Internet Plan",
+        "price": "$49.99/month",
+        "rating": 4.7,
+        "shortDescription": "Stay connected with high-speed internet from Time Warner."
+      },
+      {
+        "image": "URL to Time Warner Bundle image",
+        "name": "Time Warner Bundle",
+        "brandName": "Time Warner",
+        "type": "Bundle",
+        "price": "$79.99/month",
+        "rating": 4.8,
+        "shortDescription": "Save on TV, internet, and phone services with Time Warner bundle offers."
+      }
+    ]
+  }
     ]
   
  
