@@ -1,5 +1,8 @@
+import { useRef } from "react";
 
 const AddProduct = () => {
+    const formRef = useRef();
+
     const handleForm = e =>{
         e.preventDefault();
         const form = e.target;
@@ -22,13 +25,14 @@ const AddProduct = () => {
         .then(res=> res.json())
         .then(data=>{
             console.log(data)
+            formRef.current.reset()
         })
     }
     return (
         <div className="container mx-auto ">
             <div className="bg-[#194656] p-4 md:p-24 min-h-screen">
             <h2 className="text-3xl text-yellow-300 mt-[-50px] font-extrabold">Add a Product</h2>
-            <form onSubmit={handleForm}>
+            <form ref={formRef} onSubmit={handleForm}>
                 <div className="md:flex mb-4">
                     <div className="form-control w-full md:w-1/2">
                         <label className="label">

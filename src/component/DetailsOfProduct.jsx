@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import { NavLink } from "react-router-dom";
+
 const DetailsOfProduct = ({ productDetail }) => {
-  const { photo, description, type, name, price, rating } = productDetail;
-  console.log(productDetail)
+  const { _id, photo, description, name, price, rating } = productDetail;
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
       <figure className="p-10">
@@ -18,8 +19,8 @@ const DetailsOfProduct = ({ productDetail }) => {
         <p>{description}</p>
         <h3 className="">Price: {price}</h3>
         <div className="card-actions justify-center gap-3">
-          <button className="btn btn-primary">Details</button>
-          <button className="btn btn-primary">Update</button>
+          <NavLink to={`/productDetails/${_id}`}><button className="btn btn-primary">Details</button></NavLink>
+          <NavLink to={'/updateProduct'}><button className="btn btn-primary">Update</button></NavLink>
         </div>
       </div>
     </div>
