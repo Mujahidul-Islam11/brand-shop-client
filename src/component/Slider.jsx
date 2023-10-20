@@ -1,7 +1,6 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
  
 export function CarouselWithContent({sliderDetails}) {
-  console.log(sliderDetails)
   const {brandName, brandImageSlider} = sliderDetails;
   return (
     <Carousel className="rounded-xl">
