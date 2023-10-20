@@ -2,7 +2,6 @@
 
 const FeaturedCards = ({ movie }) => {
   const { title, image, description, rating } = movie;
-  console.log(movie)
   return (
     <div className="card card-compact bg-base-100 shadow-xl">
       <figure>

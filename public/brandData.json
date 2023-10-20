@@ -1,0 +1,142 @@
+[
+      {
+        "brandName": "Disney",
+        "brandImageSlider": [
+          {
+            "brandImageSliderId": 1,
+            "brandSliderImg": "https://example.com/disney-slider1.jpg",
+            "title": "The Magic of Disney",
+            "shortDescription": "Discover the enchanting world of Disney with timeless classics and new adventures."
+          },
+          {
+            "brandImageSliderId": 2,
+            "brandSliderImg": "https://example.com/disney-slider2.jpg",
+            "title": "Magic Comes to Life",
+            "shortDescription": "Experience the magic of Disney like never before. From beloved characters to spectacular theme parks."
+          },
+          {
+            "brandImageSliderId": 3,
+            "brandSliderImg": "https://example.com/disney-slider3.jpg",
+            "title": "Creating Dreams Since 1923",
+            "shortDescription": "Disney has been a source of inspiration and joy for generations. Join us in celebrating the magic that started in 1923."
+          }
+        ]
+      },
+      {
+        "brandName": "Netflix",
+        "brandImageSlider": [
+          {
+            "brandImageSliderId": 1,
+            "brandSliderImg": "https://example.com/netflix-slider1.jpg",
+            "title": "Endless Entertainment",
+            "shortDescription": "Explore a vast library of movies and TV shows on Netflix. From gripping dramas to hilarious comedies."
+          },
+          {
+            "brandImageSliderId": 2,
+            "brandSliderImg": "https://example.com/netflix-slider2.jpg",
+            "title": "Your Personal Cinema",
+            "shortDescription": "Transform your screen into a personal cinema with Netflix. Stream your favorite shows and movies on any device."
+          },
+          {
+            "brandImageSliderId": 3,
+            "brandSliderImg": "https://example.com/netflix-slider3.jpg",
+            "title": "Binge-Worthy Content",
+            "shortDescription": "Discover binge-worthy content on Netflix. Uninterrupted entertainment awaits, no matter your taste."
+          }
+        ]
+      },
+      {
+        "brandName": "Warner Bros.",
+        "brandImageSlider": [
+          {
+            "brandImageSliderId": 1,
+            "brandSliderImg": "https://example.com/warner-bros-slider1.jpg",
+            "title": "Entertainment Beyond Boundaries",
+            "shortDescription": "Warner Bros. brings you blockbuster movies, iconic characters, and legendary stories. Immerse yourself in cinematic excellence."
+          },
+          {
+            "brandImageSliderId": 2,
+            "brandSliderImg": "https://example.com/warner-bros-slider2.jpg",
+            "title": "100 Years of Magic",
+            "shortDescription": "Join us in celebrating 100 years of magical storytelling. Warner Bros. continues to captivate audiences worldwide."
+          },
+          {
+            "brandImageSliderId": 3,
+            "brandSliderImg": "https://example.com/warner-bros-slider3.jpg",
+            "title": "Heroes and Villains Unite",
+            "shortDescription": "Explore the world of heroes and villains with Warner Bros. Discover epic battles and timeless characters."
+          }
+        ]
+      },
+      {
+        "brandName": "Sony Pictures",
+        "brandImageSlider": [
+          {
+            "brandImageSliderId": 1,
+            "brandSliderImg": "https://example.com/sony-pictures-slider1.jpg",
+            "title": "Unforgettable Cinematic Experiences",
+            "shortDescription": "Sony Pictures delivers unforgettable films and cinematic experiences. Dive into a world of drama, action, and imagination."
+          },
+          {
+            "brandImageSliderId": 2,
+            "brandSliderImg": "https://example.com/sony-pictures-slider2.jpg",
+            "title": "Where Stories Come to Life",
+            "shortDescription": "Experience storytelling at its finest with Sony Pictures. From gripping dramas to epic adventures, we create memories on the big screen."
+          },
+          {
+            "brandImageSliderId": 3,
+            "brandSliderImg": "https://example.com/sony-pictures-slider3.jpg",
+            "title": "Cinematic Excellence",
+            "shortDescription": "Sony Pictures is a symbol of cinematic excellence. Join us in celebrating the art of filmmaking."
+          }
+        ]
+      },
+      {
+        "brandName": "Spotify",
+        "brandImageSlider": [
+          {
+            "brandImageSliderId": 1,
+            "brandSliderImg": "https://example.com/spotify-slider1.jpg",
+            "title": "Your Soundtrack to Life",
+            "shortDescription": "Spotify provides music for every moment. Discover new artists, create playlists, and enjoy your favorite tunes anytime, anywhere."
+          },
+          {
+            "brandImageSliderId": 2,
+            "brandSliderImg": "https://example.com/spotify-slider2.jpg",
+            "title": "Endless Music Journey",
+            "shortDescription": "Embark on an endless music journey with Spotify. Find your rhythm, discover new genres, and make your own soundtracks."
+          },
+          {
+            "brandImageSliderId": 3,
+            "brandSliderImg": "https://example.com/spotify-slider3.jpg",
+            "title": "Music Unleashed",
+            "shortDescription": "With Spotify, music is unleashed in all its glory. Experience the power of sound and the joy of discovery."
+          }
+        ]
+      },
+      {
+        "brandName": "Time Warner",
+        "brandImageSlider": [
+          {
+            "brandImageSliderId": 1,
+            "brandSliderImg": "https://example.com/time-warner-slider1.jpg",
+            "title": "Connecting the World",
+            "shortDescription": "Time Warner is a global leader in media and entertainment. Our diverse portfolio reaches audiences around the world."
+          },
+          {
+            "brandImageSliderId": 2,
+            "brandSliderImg": "https://example.com/time-warner-slider2.jpg",
+            "title": "Shaping the Future of Media",
+            "shortDescription": "Join us in shaping the future of media and entertainment. At Time Warner, we innovate, inspire, and connect the world."
+          },
+          {
+            "brandImageSliderId": 3,
+            "brandSliderImg": "https://example.com/time-warner-slider3.jpg",
+            "title": "Embrace Creativity",
+            "shortDescription": "Embrace the power of creativity with Time Warner. Explore a world of storytelling, news, and innovation."
+          }
+        ]
+      }
+    ]
+  
+ 

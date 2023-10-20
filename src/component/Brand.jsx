@@ -1,8 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
 const Brand = ({ brand }) => {
-  const { image, brandName} = brand
+  const {  image, brandName} = brand
   return (
-    <div className="card  bg-base-100 shadow-xl">
+    <NavLink to={`/details/${brandName}`}>
+      <div className="card  bg-base-100 shadow-xl">
       <figure>
         <img
           src={image}
@@ -14,6 +17,7 @@ const Brand = ({ brand }) => {
         <h3 className="text-xl font-bold">{brandName}</h3>
       </div>
     </div>
+    </NavLink>
   );
 };
 
