@@ -112,7 +112,7 @@ const Navbar = () => {
     }
       </ul>
     </div>
-    <NavLink to={'/'}><a className="btn btn-ghost normal-case text-xl">EntoMedu</a></NavLink>
+    <NavLink to={'/'}><a className="btn btn-ghost normal-case text-xl"><img src="https://i.ibb.co/d7gbDC5/Ocean-Cinema-Logo.jpg" alt="" className="w-10 rounded-full" /> EntoMedu</a></NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

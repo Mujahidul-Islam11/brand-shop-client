@@ -85,7 +85,7 @@ const Login = () => {
             onClick={handleGoogleSignIn}
             className="btn btn-primary mb-2 mx-2"
           >
-            Register With Google
+            Login With Google
           </button>
         </div>
       </div>

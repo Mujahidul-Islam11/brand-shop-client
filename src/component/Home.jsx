@@ -4,6 +4,7 @@ import Brand from "./Brand";
 import FeaturedMedia from "./FeaturedMedia";
 import { useEffect } from "react";
 import { useState } from "react";
+import Services from "./Services";
 
 const Home = () => {
     const [movies, setMovies] = useState([])
@@ -26,6 +27,8 @@ const Home = () => {
             </div>
             <h3 className="text-3xl font-bold text-center my-16">Featured Movies/TV Shows</h3>
             <FeaturedMedia movies={movies}></FeaturedMedia>
+            <h3 className="text-3xl font-bold text-center my-16">Our Services</h3>
+            <div className=" container flex justify-center"><Services></Services></div>
         </div>
     );
 };
