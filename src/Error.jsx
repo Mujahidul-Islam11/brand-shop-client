@@ -4,7 +4,7 @@ const Error = () => {
   return (
     <div>
       <div className="flex justify-center">
-        <img src="../public/error 404.gif" alt="" />
+        <img src="https://i.ibb.co/zSznQHF/error-404.gif" alt="" />
       </div>
       <NavLink className="flex justify-center" to={'/'}>
         <button className="btn">Go Home</button>

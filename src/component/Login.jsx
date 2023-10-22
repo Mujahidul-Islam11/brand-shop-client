@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useContext } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
-import swal from "sweetalert";
-
+import Swal from "sweetalert2"; // Corrected import statement
 
 const Login = () => {
-  const { signIn,GoogleSignIn } = useContext(AuthContext);
-  const mainRoute = useNavigate()
+  const { signIn, GoogleSignIn } = useContext(AuthContext);
+  const mainRoute = useNavigate();
+  const location = useLocation(); // Added useLocation hook
 
   const handleForm = (e) => {
     e.preventDefault();
@@ -15,30 +15,38 @@ const Login = () => {
     const email = form.email.value;
     const password = form.password.value;
     signIn(email, password)
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Login Successful",
+        });
+        mainRoute(location?.state ? location.state.from : "/");
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops",
+          text: error.message,
+          footer: '<a href="">Why do I have this issue?</a>',
+        });
+      });
+  };
+
+  const handleGoogleSignIn = () => {
+    GoogleSignIn()
       .then((result) => {
         console.log(result.user);
-        swal("Good job!", "Successfully logged in", "success");
-        mainRoute('/')
+        Swal.fire("Good job!", "Successfully logged in", "success");
+        mainRoute("/");
       })
       .catch((error) => {
         console.error(error);
       });
   };
-  const handleGoogleSignIn = () =>{
-    GoogleSignIn()
-            .then(result => {
-                console.log(result.user);
-                swal("Good job!", "Successfully logged in", "success");
-                mainRoute('/')
-            })
-            .catch(error => {
-                console.error(error)
-            })
-  }
 
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col ">
+      <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
         </div>
@@ -81,10 +89,7 @@ const Login = () => {
             </div>
           </form>
           <h3 className="text-center">Or</h3>
-          <button
-            onClick={handleGoogleSignIn}
-            className="btn btn-primary mb-2 mx-2"
-          >
+          <button onClick={handleGoogleSignIn} className="btn btn-primary mb-2 mx-2">
             Login With Google
           </button>
         </div>

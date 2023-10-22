@@ -3,10 +3,10 @@
 
 const Services = () => {
     return (
-        <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className="relative flex w-full mb-8 max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
   <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
     <img
-      src={'/public/Team.gif'}
+      src="https://i.ibb.co/Lr8XWLL/Team-1.gif"
       alt="image"
       className="object-cover w-full h-full"
     />

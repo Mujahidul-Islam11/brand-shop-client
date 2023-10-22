@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import swal from "sweetalert";
 
 
-const Navbar = () => {
+const Navbar = ({darkMood, handleDark}) => {
   const {user,LogOut} = useContext(AuthContext);
 
   const handleLogOut = () =>{
@@ -14,15 +15,15 @@ const Navbar = () => {
     swal("Good job!", "Successfully logged out user", "success");
   }
     const links = (
-        <>
+        <ul className={`${darkMood? 'text-white': 'text-black'} md:flex`}>
           <li className="text-xl font-bold">
             <NavLink
               to="/"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
               }
-            >
-              <a href="">Home</a>
+            > 
+              <a href="" >Home</a>
             </NavLink>
           </li>
 
@@ -34,7 +35,7 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
               }
             >
-              <a href="">Add Product</a>
+              <a href="" >Add Product</a>
             </NavLink>
           </li>
           }
@@ -47,7 +48,7 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
               }
             >
-              <a href="">My Cart</a>
+              <a href="" >My Cart</a>
             </NavLink>
           </li>
           }
@@ -59,7 +60,7 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
               }
             >
-              <a href="">Login</a>
+              <a href="" >Login</a>
             </NavLink>
           </li>
 
@@ -70,13 +71,13 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "text-blue-400 underline" : ""
               }
             >
-              <a href="">Register</a>
+              <a href="" >Register</a>
             </NavLink>
           </li>
-        </>
+        </ul>
       )
     return (
-        <div className="navbar bg-base-100">
+        <div className={`navbar ${darkMood? 'bg-gray-500' : 'bg-base-100'}`}>
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -112,7 +113,10 @@ const Navbar = () => {
     }
       </ul>
     </div>
-    <NavLink to={'/'}><a className="btn btn-ghost normal-case text-xl"><img src="https://i.ibb.co/d7gbDC5/Ocean-Cinema-Logo.jpg" alt="" className="w-10 rounded-full" /> EntoMedu</a></NavLink>
+    <div className="flex justify-center">
+    <NavLink to={'/'}><a className="btn btn-ghost normal-case text-xl"><img src="https://i.ibb.co/d7gbDC5/Ocean-Cinema-Logo.jpg" alt="" className="lg:flex hidden w-10 rounded-full" /> EntoMedu</a></NavLink>
+    <button className="btn" onClick={handleDark}>{`${darkMood? 'light': 'dark'}`}</button>
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

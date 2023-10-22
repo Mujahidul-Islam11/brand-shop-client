@@ -15,7 +15,7 @@ const AddProduct = () => {
         const photo = form.photo.value;
         const products = {name, brandName, type, description, price, rating, photo}
         console.log(products)
-        fetch(`http://localhost:5000/products`,{
+        fetch(`https://assignment-ten-project-server.vercel.app/products`,{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

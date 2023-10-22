@@ -6,7 +6,7 @@ export function CarouselWithContent({sliderDetails}) {
     <Carousel className="rounded-xl">
       <div className="relative h-full w-full">
         <img
-          src={brandImageSlider[0].brandSliderImg}
+          src={brandImageSlider[0]?.brandSliderImg}
           alt="image 1"
           className="h-[700px] w-full object-cover"
         />
@@ -18,7 +18,7 @@ export function CarouselWithContent({sliderDetails}) {
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
               {
-                brandImageSlider[0].title
+                brandImageSlider[0]?.title
               }
             </Typography>
             <Typography
@@ -27,7 +27,7 @@ export function CarouselWithContent({sliderDetails}) {
               className="mb-12 opacity-80"
             >
               {
-                brandImageSlider[0].shortDescription
+                brandImageSlider[0]?.shortDescription
               }
             </Typography>
             <div className="flex justify-center gap-2">
@@ -40,7 +40,7 @@ export function CarouselWithContent({sliderDetails}) {
       </div>
       <div className="relative h-full w-full">
         <img
-          src={brandImageSlider[1].brandSliderImg}
+          src={brandImageSlider[1]?.brandSliderImg}
           alt="image 2"
           className="h-[700px] w-full object-cover"
         />
@@ -52,7 +52,7 @@ export function CarouselWithContent({sliderDetails}) {
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
               {
-                brandImageSlider[1].title
+                brandImageSlider[1]?.title
               }
             </Typography>
             <Typography
@@ -61,7 +61,7 @@ export function CarouselWithContent({sliderDetails}) {
               className="mb-12 opacity-80"
             >
               {
-                brandImageSlider[1].shortDescription
+                brandImageSlider[1]?.shortDescription
               }
             </Typography>
             <div className="flex gap-2">
@@ -74,7 +74,7 @@ export function CarouselWithContent({sliderDetails}) {
       </div>
       <div className="relative h-full w-full">
         <img
-          src={brandImageSlider[2].brandSliderImg}
+          src={brandImageSlider[2]?.brandSliderImg}
           alt="image 3"
           className="h-[700px] w-full object-cover"
         />
@@ -86,7 +86,7 @@ export function CarouselWithContent({sliderDetails}) {
               className="mb-4 text-3xl md:text-4xl lg:text-5xl"
             >
               {
-                brandImageSlider[2].title
+                brandImageSlider[2]?.title
               }
             </Typography>
             <Typography
@@ -95,7 +95,7 @@ export function CarouselWithContent({sliderDetails}) {
               className="mb-12 opacity-80"
             >
               {
-                brandImageSlider[2].shortDescription
+                brandImageSlider[2]?.shortDescription
               }
             </Typography>
             <div className="flex gap-2">

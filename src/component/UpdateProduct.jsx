@@ -17,7 +17,7 @@ const { _id, type,photo, description, name, price, rating, brandName } = updateP
         const rating = form.rating.value;
         const photo = form.photo.value;
         const update = {name, brandName, type, description, price, rating, photo}
-        fetch(`http://localhost:5000/products/${_id}`,{
+        fetch(`https://assignment-ten-project-server.vercel.app/products/${_id}`,{
             method: "PUT",
             headers: {
                 "content-type" : "application/json"

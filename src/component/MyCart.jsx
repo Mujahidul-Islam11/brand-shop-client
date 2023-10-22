@@ -20,7 +20,7 @@ const loadedData = useLoaderData()
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/myCart/${_id}`, {
+        fetch(`https://assignment-ten-project-server.vercel.app/myCart/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -40,7 +40,7 @@ const loadedData = useLoaderData()
 
     }
     return (
-        <div>
+        <div className="grid md:grid-cols-3 my-10">
             {
                 cartData.map(cart => <div key={cart._id} className="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border">
                 <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-96 rounded-xl bg-clip-border">
