@@ -1,18 +1,14 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { useState } from "react";
+import useDarkMode from "../hooks/useDarkMode";
 
 const Root = () => {
-  const [darkMood, setDarkMode] = useState(false);
-  console.log(darkMood);
-  const handleDark = () => {
-    setDarkMode(!darkMood);
-  };
+  const {darkMode, handleDark} = useDarkMode();
   return (
-    <div>
-      <Navbar handleDark={handleDark} darkMood={darkMood}></Navbar>
-      <div className={`${darkMood? 'bg-gray-700': 'bg-base-100'}`}><Outlet darkMood={darkMood}></Outlet></div>
+    <div className={`${darkMode? "bg-gray-900": "bg-white"}`}>
+      <Navbar></Navbar>
+      <Outlet></Outlet>
       <Footer></Footer>
     </div>
   );
