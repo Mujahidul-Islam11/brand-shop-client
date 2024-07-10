@@ -9,7 +9,7 @@ const Brands = ({ brands }) => {
     <div className={`${darkMode ? "bg-gray-900" : "bg-base-100"}`}>
       <h3
         className={`text-3xl font-bold my-16 text-center ${
-          darkMode ? " text-white" : "text-gray-900"
+          darkMode ? " text-white" : "text-gray-800"
         }`}
       >
         Our Brands
