@@ -125,9 +125,9 @@ const Navbar = () => {
             )}
           </ul>
         </div>
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex justify-center items-center gap-4">
           <NavLink to={"/"}>
-            <img className="w-20" src="https://i.ibb.co/QN7RFZD/BloodBay.png" alt="" />
+            <img className="w-20" src="https://i.ibb.co/G0JKgyF/Blood-Bay-removebg-preview.png" alt="" />
           </NavLink>
           <button className="btn" onClick={handleDark}>{`${
             darkMode ? "light" : "dark"
