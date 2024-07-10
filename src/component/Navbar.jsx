@@ -126,19 +126,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center gap-6">
-          <NavLink className={"flex items-center"} to={"/"}>
-            <img
-              className="w-16"
-              src="https://i.postimg.cc/vTj695nH/f-2-removebg-preview.png"
-              alt=""
-            />
-            <h3
-              className={`text-xl font-serif font-semibold mt-3 ${
-                darkMode ? "text-white" : ""
-              }`}
-            >
-              Movie Mall
-            </h3>
+          <NavLink to={"/"}>
+            <img className="w-20" src="https://i.ibb.co/QN7RFZD/BloodBay.png" alt="" />
           </NavLink>
           <button className="btn" onClick={handleDark}>{`${
             darkMode ? "light" : "dark"
